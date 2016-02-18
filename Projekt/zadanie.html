@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <title>Tím 16 - Zadanie</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web tímu 16, Tímový projekt FIIT STU 2015/16">
+    <meta name="author" content="Martin Petráš">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../main.css" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="navbar-brand"><a class="banner" href="../index.html">Tím 16</a></span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="../index.html">Domov</a></li>
+                            <li class="dropdown active">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projekt <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="./zadanie.html">Zadanie</a></li>
+                                    <li><a href="./plan.html">Plán</a></li>
+                                    <li><a href="./zapisy.html">Zápisy zo stretnutí</a></li>
+                                    <li><a href="./retrospektivy.html">Retrospektívy</a></li>
+                                    <li><a href="./odkazy.html">Odkazy a zdroje</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../tim.html">Tím</a></li>
+                            <li><a href="./jira.html">Jira Exporty</a></li>
+                            <li><a href="./dokumentacia.html">Dokumentácia</a></li>
+                        </ul>
+                        <!--<form class="navbar-form pull-right" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Hľadať" />
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+         <h1>Interakcia a kolaborácia vo virtuálnej realite <small>[VR-Collab]</small></h1>
+        <div class="well well-sm">
+            <p><strong>Vedúci tímu:</strong> Ing. Peter Drahoš, PHd.<p>
+            <p><strong>Užitočné predmety:</strong> Princípy počítačovej grafiky a spracovania obrazu, Vizualizácia dát, Grafika a 
+            multimédia</p>
+            <p><strong>Povinné technológie:</strong> <a href="http://www.cplusplus.com">C++</a> <a href="https://www.opengl.org/">OpenGL</a> 
+            <a href="http://www.openscenegraph.org/">OpenSceneGraph</a> <a href="https://www.oculus.com/">Oculus Rift</a> 
+            <a href="https://www.leapmotion.com/">Leap Motion senzor</a> <a href="https://dev.windows.com/en-us/kinect">Kinect senzor</a></p>
+            <p><strong>Odporúčané technológie:</strong> <a href="http://www.qt.io/">Qt</a> <a href="https://cmake.org/">CMake</a></p>
+            <p><strong>Cieľ projektu:</strong> Cieľom projektu je navrhnúť a preskúmať známe spôsoby interakcie v prostredí virtuálnej 
+            reality formou prototypu kolaboratívnej aplikácie. Projekt je zameraný na návrh a overenie spôsobu interakcie pomocou
+            virtuálnych nástrojov v kontexte aplikácie určenej na vedecké vizualizácie</p>
+            <p><strong>Prečo si mám vybrať tento projekt:</strong> Bežne dostupné displeje a zariadenia schopné vizualizovať komplexné 
+            virtuálne scény sú predmetom dlhodobého výskumu v oblasti počítačovej grafiky. Narastajúci záujem o takéto zariadenia najmä
+            z prostredia herného priemyslu spôsobil výrazný nárast kvality a dostupnosti týchto zariadení v praxi. Schopnosť 
+            kolaboratívne pracovať s viacerými používateľmi v imersívnom virtuálnom prostredí však predstavuje stále výzvu hlavne z 
+            pohľadu interakcie.</p>
+            <p></p>
+        </div>
+        <p>
+            Výsledkom projektu bude prototyp aplikácie schopný vizualizovať a interaktívne manipulovať s abstraktnými
+            objektami vo virtuálnom priestore. Prototyp je zameraný najmä na interakciu s virtuálnym prostredím pomocou
+            paradigmy virtuálnych nástrojov avšak očakáva sa integrácia i bežných 2D ovládacích prvkov. Kľúčová vlastnosť
+            aplikácie je však schopnosť reprodukovať reálnu či abstraktnú podobu používateľa vo virtuálnom prostredí. 
+        </p>
+        <p>
+            Na úspešnú realizáciu projektu bude potrebné:
+            <ul>
+                <li>reprezentovať podobu používateľa (projekcia avatara) vo virtuálnom prostredí</li>
+                <li>navrhnúť a implementovať koncept použitia virtuálnych nástrojov pri interakcii</li>
+                <li>integrovať interakčné prvky typu WIMPs do virtuálneho prostredia</li>
+            </ul>
+        </p>
+        <p>
+            Projekt má skôr výskumný charakter, je zameraný na použitie moderných technológií v kontexte už existujúcich
+            projektov zameraných na vedeckú vizualizáciu dát ktoré vyvíjame na fakulte. Riešenie bude podporené novým
+            Laboratóriom počítačového videnia a počítačovej grafiky so zameraním na využitie dostupného hardvéru pre prácu
+            vo virtuálnej realite.
+        </p>
+    </div>
+</body>
+</html>
